@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  overflow: hidden;
+}
+.contain{
+  margin-top: 0vh;
+  
+}
+.home{
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.act{
+ background-color: rgb(1, 28, 52);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.hariimg{
+  height: 12vh;
+  width: 22vh;
+}
+.top{
+  background-image: linear-gradient(rgba(5, 5, 5, 0.75),rgba(15, 13, 11, 0.75)),url("/src/images/header4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding-top: 33px;
+  height: 43vh;
+}
+.autoWritter {
+  font-family: arial;
+  display: table;
+  padding-top: 2vh;
+ 
+}
+.autoWrite-text {
+background: linear-gradient(to right, #fbf9f8 0%, #dd4c4f 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  /*-- Call text and cursor animation --*/
+  animation: write 3s steps(40, end), cursor .7s step-end infinite;
+  font-size: 32px;
+  border-right: 4px solid;
+}
+
+/*-- Write text as Animated --*/
+@keyframes write {
+  from {
+      width: 0%
+  }
+  to {
+      width: 100%
+  }
+}
+
+/*-- Animated blink cursor CSS--*/
+@keyframes cursor{
+
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: #040404;
+  }
+}
+        
+.card {
+    
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(23, 19, 22, 0.3) -10px 10px, rgba(46, 182, 240, 0.2) -15px 15px, rgba(46, 240, 208, 0.1) -20px 20px, rgba(240, 182, 46, 0.05) -25px 25px;
+  border-radius:20px;
+  
+  transition: transform .2s;
+  width:auto;
+  height:auto;
+  margin: 0 auto;
+  
+}
+.card:hover {
+    -ms-transform: scale(1.0); 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.04); 
+  }
+
+
+  .img{
+    padding-left: 15px;
+    padding-top: 4vh;
+  }
+  .rotate {
+    animation: rotation 0.7s;
+  }
+  
+  .linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .harigrid{
+margin-left: 9vh;
+  }
+  .hero{
+    background-image:url("/src/images/Hari1.jpeg");
+    
+  }
+  .navigation{
+    z-index: 10000;
+  }
+  .contactgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a.active{
+    color: rgb(2, 13, 48);
+    background: rgb(0,190,152);
+    background: radial-gradient(circle, rgba(0, 190, 152, 0.548) 4%, rgba(19, 5, 87, 0.767) 100%);
+        border-color: rgb(4, 179, 164);
+    border-style: groove;
+    height: 40vh;
+    width: 100vh;
+    border-radius: 70px;
+  }
+  .active{
+    transition: .5s;
+  }

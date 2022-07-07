@@ -1,0 +1,193 @@
+.im{
+    background-image: linear-gradient(rgba(5, 5, 5, 0.75),rgba(15, 13, 11, 0.75)),url("/src/images/gallery.jpg");
+    height:97vh;
+    width: 100%;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    text-align: center;
+  }
+  
+  .animate-charcter
+  {
+    
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #069dbf 10%,
+      #0ad75c 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size:70px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 300% center;
+    }
+  }
+  .imgslider1{
+    padding-top: 8vh;
+    
+  }
+  .imgslider2{
+   
+    padding-top: 8vh;
+  }
+  .gallery{
+    background-image: url("/src/images/Galaxy.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .hover-zoom {
+    overflow: hidden;
+ 
+  }
+  
+  .hover-zoom {
+    transition: all 0.6s ease 0s;
+    width: 100%;
+  }
+  
+  .hover-zoom:hover {
+    transform: scale(1.25);
+  }
+  .hover-zoom1 {
+   
+  
+   overflow-x: hidden;
+   overflow-y: hidden;
+   overflow-wrap: inherit;
+  }
+  
+  .hover-zoom1 {
+    transition: all 0.6s ease 0s;
+    width: 100%;
+  }
+  
+  .hover-zoom1:hover {
+    transform: scale(1.25);
+  }
+  #sp ul {
+  
+    top:7vh;
+    
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    list-style:none;
+    width:1400px;
+    height:550px;
+    border-radius:3px;
+    overflow:hidden;
+   
+  }
+  
+  
+  #sp li {
+   position: relative;
+    width:100px;
+    height:550px;
+    float:left;
+    border-left:1px solid white;
+    -webkit-transition:all 0.7s;
+    -moz-transition:all 0.7s;
+    transition:all 0.7s;
+    box-shadow:-2px 0 10px 2px;
+  }
+  
+  #sp ul li:first-child {
+    border:none;
+  }
+  
+  #sp span {
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:50%;
+    color:white;
+    white-space:nowrap;
+    padding:20px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  
+  }
+  
+  #sp img {
+    width:800px;
+    height:550px;
+  }
+  
+  #sp ul:hover li {
+    width:50px;  
+  }
+  
+  
+  #sp ul li:hover {
+    width:750px;
+    
+  }
+  #sp{
+    padding-top: 8vh;
+    margin:0 auto;
+    background: linear-gradient(to right,  rgba(0, 0, 0, 0.65) 0%,rgba(9, 9, 9, 0.115) 100%);
+  }
+  .galfam{
+    padding-top: 10vh;
+  }
+  .galfam li{
+display: inline;
+text-decoration: none;
+min-height: 100px;
+max-height: 300px;
+min-width: 300px;
+max-width: 600px;
+margin-left: 20px;
+margin-bottom: 25px;
+margin-top: 25px;
+  }
+  .galfam li img{
+    margin-bottom: 20px;
+  }
+  .my{
+    background: linear-gradient(to right,  rgb(13, 3, 100) 0%,rgba(4, 141, 130, 0.958) 100%);
+
+  }
+  .Apps ul li{
+    display: inline;
+    text-decoration: none;
+    margin-left: 20vh;
+    padding-top: 2vh;
+    
+  }
+  .Apps ul{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10vh;
+    padding-left: 10vh;
+  }
+  .Apps{
+    margin-top: 3vh;
+    height: 10vh;
+    background-color: #014d5d;
+  }
